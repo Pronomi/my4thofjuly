@@ -1,0 +1,69 @@
+/* Definindo a fonte padrão */
+body {
+    font-family: 'MS Sans Serif', Arial, sans-serif;
+    background-color: #008080; /* Fundo verde do Windows 95 */
+    text-align: center; /* Centraliza todo o texto na página */
+}
+
+/* Centraliza os botões */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espaço entre os botões */
+}
+
+/* Estilo para botões */
+button {
+    font-family: inherit;
+    background-color: #C0C0C0;
+    color: black;
+    border: 2px solid #C0C0C0;
+    padding: 2px 8px;
+    box-shadow: 1px 1px 0px #ffffff, -1px -1px 0px #808080, inset -1px -1px 0px #808080, inset 1px 1px 0px #ffffff;
+    outline: none;
+    cursor: pointer;
+}
+
+button:active {
+    box-shadow: inset 1px 1px 0px #ffffff, inset -1px -1px 0px #808080;
+}
+
+/* Estilo do cursor */
+body, button {
+    cursor: url('https://static.tumblr.com/rlmkxdt/5U5ogfok2/windows_95_default.cur'), auto;
+}
+
+/* Estilo para textos */
+p, h1, h2, h3, h4, h5, h6 {
+    font-family: inherit;
+}
+
+/* Estilo para o contêiner de vídeo */
+.video-container {
+    display: none;
+    margin-top: 20px;
+}
+
+iframe {
+    width: 560px;
+    height: 315px;
+    border: none;
+}
+
+/* Estilo para o contêiner de imagem */
+#imagem-container {
+    display: none;
+    margin-top: 20px;
+    position: relative;
+    width: 600px;
+    height: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; /* Centraliza o contêiner */
+}
+
+#imagem-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+    border-radius: 10px;
+}

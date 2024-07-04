@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My 4th of July</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Para minha namorada</h2>
+    <p>Eu criei esse site como um presente de aniversário, apesar de ser romântica, eu gosto de ser meio idiotinha também.</p>
+    <p>Aproveite para se divertir com esse site singelo e brega, como meu amor por você.</p>
+    <h3>Você é minha namorada?</h3>
+    <div class="button-container">
+        <button onclick="showVideo()">Sim</button>
+        <button onclick="mostrarImagem()">Não</button>
+    </div>
+
+    <!-- Container do vídeo (inicialmente oculto) -->
+    <div id="video-container" class="video-container"></div>
+
+    <!-- Container da imagem (inicialmente oculto) -->
+    <div id="imagem-container">
+        <img src="meubem.jpg" alt="meu bem">
+    </div>
+
+    <script>
+        function showVideo() {
+            const videoContainer = document.getElementById('video-container');
+            videoContainer.innerHTML = `
+                <iframe src="https://www.youtube.com/embed/rrkI5WVi0zM" allowfullscreen></iframe>
+            `;
+            videoContainer.style.display = 'block';
+            document.getElementById("imagem-container").style.display = 'none';
+        }
+
+        function mostrarImagem() {
+            // Torna visível o container da imagem e oculta o container do vídeo
+            document.getElementById("imagem-container").style.display = "block";
+            document.getElementById("video-container").style.display = "none";
+        }
+    </script>
+</body>
+</html>
